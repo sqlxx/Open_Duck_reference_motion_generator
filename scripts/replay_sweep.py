@@ -242,9 +242,9 @@ if __name__ == "__main__":
         left_toe_pose[:3, 3] = left_toe_pos
         right_toe_pose[:3, 3] = right_toe_pos
 
-        fv.pushFrame(root_pose, "root")
+        fv.push_frame(root_pose, "root")
 
-        fv.pushFrame(left_toe_pose, "left_toe")
-        fv.pushFrame(right_toe_pose, "right_toe")
+        fv.push_frame(left_toe_pose, "left_toe")
+        fv.push_frame(right_toe_pose, "right_toe")
 
         time.sleep(1 / RM.fps)
